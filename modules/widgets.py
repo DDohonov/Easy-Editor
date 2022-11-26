@@ -5,7 +5,8 @@ from PyQt5.QtWidgets import (QApplication,
                             QHBoxLayout,
                             QPushButton,
                             QListWidget,
-                            QLabel)
+                            QLabel,
+                            QFileDialog)
 
 
 app = QApplication([])
@@ -13,6 +14,8 @@ app = QApplication([])
 window=QWidget()
 window.setFixedSize(800,800)
 window.setWindowTitle('easy Editor')
+
+filedialog = QFileDialog()
 
 main_layout = QHBoxLayout()
 v1_layout = QVBoxLayout()
